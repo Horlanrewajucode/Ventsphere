@@ -171,7 +171,7 @@ nav {
   }
 
   & .hero-btn1:hover,
-  & .hero-btn2:hover{
+  & .hero-btn2:hover {
     font-weight: 600;
   }
 
@@ -187,27 +187,208 @@ nav {
     }
   }
 
-  & .hero-links{
+  & .hero-links {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 40px 0;
 
-    & p{
-        width: 140px;
-        font-size: 14px;
-        color: rgba(107, 114, 128, 1);
+    & p {
+      width: 140px;
+      font-size: 14px;
+      color: rgba(107, 114, 128, 1);
     }
   }
 }
 
 /* Second Section Styling */
-#section2{
+#section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+
+  & .section2-heading {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 100px 0;
+    gap: 30px;
 
-    
+    & p {
+      font-size: 14px;
+      color: rgba(177, 173, 78, 1);
+      font-weight: 500;
+    }
+
+    & h1 {
+      font-size: 50px;
+      width: 575px;
+      color: rgba(31, 37, 63, 1);
+      text-align: center;
+    }
+  }
+
+  & .section2-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 80px;
+
+    & .section2-main-left {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: left;
+      width: 540px;
+      height: 400px;
+      background-color: rgba(31, 37, 63, 1);
+      border-radius: 15px;
+      gap: 90px;
+      padding: 50px 50px;
+
+      & .section2-inner-div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        & h2 {
+          font-size: 28px;
+          color: white;
+        }
+
+        & p {
+          color: rgba(255, 255, 255, 0.7);
+          font-size: 18px;
+          width: 420px;
+        }
+      }
+    }
+
+    & .section2-main-right {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: left;
+      width: 540px;
+      height: 400px;
+      background-color: rgba(29, 61, 58, 1);
+      border-radius: 15px;
+      gap: 90px;
+      padding: 50px 50px;
+
+      & .section2-inner-div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        & h2 {
+          font-size: 28px;
+          color: white;
+        }
+
+        & p {
+          color: rgba(255, 255, 255, 0.7);
+          font-size: 18px;
+          width: 420px;
+        }
+      }
+    }
+  }
+}
+
+/* Main Section Styling */
+#main1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  background-color: rgba(247, 246, 242, 1);
+  margin: 120px 0;
+  padding: 80px 0;
+
+  & .main-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    & h4 {
+      font-size: 14px;
+      color: rgba(177, 173, 78, 1);
+    }
+
+    & h1 {
+      font-size: 48px;
+      color: rgba(31, 37, 63, 1);
+      width: 500px;
+      text-align: center;
+    }
+
+    & p {
+      font-size: 16px;
+      width: 400px;
+      color: rgba(107, 114, 128, 1);
+      text-align: center;
+    }
+  }
+
+  & .main-middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    & .main-left,
+    .main-right {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    & .main-one {
+      display: flex;
+      gap: 40px;
+      align-items: start;
+      justify-content: start;
+      width: 600px;
+      background-color: rgba(235, 235, 235, 1);
+      padding: 40px;
+      border-radius: 15px;
+      width: 550px;
+
+      & .sub-main-one {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        & h2 {
+          font-size: 26px;
+          color: rgba(29, 61, 58, 1);
+        }
+
+        & p {
+          font-size: 17px;
+          color: rgba(107, 114, 128, 1);
+          width: 400px;
+        }
+      }
+    }
+  }
+  & button{
+    display: flex;
+    background-color: rgba(31, 37, 63, 1);
+    border-radius: 16px;
+    gap: 5px;
+    padding: 12px 22px;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
 }
