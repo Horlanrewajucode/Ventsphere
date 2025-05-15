@@ -1,6 +1,6 @@
 # VENTSPHERE
 
- A clone of (https://ventsphere-website.webflow.io/)[Ventsphere] Website to test my overall knowledge in web devlopment fundamentals
+ A clone of [https://ventsphere-website.webflow.io/](Ventsphere) Website to test my overall knowledge in web devlopment fundamentals
 
  
 ## 🚀 About Vensphere
@@ -29,4 +29,4 @@ This landing page was built with:
 - Contact form with validation
 
 ### Live Site
-(https://ventsphere-gamma.vercel.app/)[Ventsphere]
+[Ventsphere](https://ventsphere-gamma.vercel.app/)
