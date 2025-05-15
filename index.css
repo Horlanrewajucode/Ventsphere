@@ -38,10 +38,10 @@ nav {
         font-weight: 500;
       }
 
-      & a:hover {
+      /* & a:hover {
         color: rgb(79, 79, 179);
         font-weight: 600;
-      }
+      } */
     }
   }
 
@@ -93,14 +93,14 @@ nav {
       font-weight: 450;
     }
 
-    & .btn1:hover {
+    /* & .btn1:hover {
       color: rgb(79, 79, 179);
       font-weight: 600;
-    }
+    } */
 
-    & .btn2:hover {
+    /* & .btn2:hover {
       font-weight: 600;
-    }
+    } */
   }
 }
 /* First Section Styling */
@@ -177,10 +177,10 @@ nav {
     }
   }
 
-  & .hero-btn1:hover,
+  /* & .hero-btn1:hover,
   & .hero-btn2:hover {
     font-weight: 600;
-  }
+  } */
 
   & .image-container {
     width: 500px;
@@ -460,7 +460,7 @@ nav {
   justify-content: center;
   background-color: rgba(247, 246, 242, 1);
   margin: 100px 0 0;
-  padding: 100px 0;
+  padding: 100px 0 0;
   gap: 70px;
 
   & .testimonial-heading {
@@ -507,5 +507,194 @@ nav {
         font-size: 12px;
       }
     }
+  }
+}
+
+/* Aside Section(FAQ Section) Styling */
+
+#aside1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  height: 700px;
+  background-color: rgba(247, 246, 242, 1);
+  margin: 0 0 100px;
+  padding: 0px 0 100px;
+
+  & .aside-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & h4 {
+      font-size: 14px;
+      color: rgba(177, 173, 78, 1);
+    }
+
+    & h1 {
+      font-size: 48px;
+      width: 500px;
+      color: rgba(31, 37, 63, 1);
+    }
+
+    & p {
+      font-size: 18px;
+      width: 470px;
+      line-height: 150%;
+      letter-spacing: 0%;
+    }
+
+    & span {
+      font-weight: 600;
+      font-style: italic;
+    }
+  }
+
+  & .aside-faq {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    gap: 20px;
+
+    & details {
+      background-color: rgba(255, 255, 255, 1);
+      border-radius: 16px;
+      padding: 10px 50px;
+      /* width: 600px; */
+    }
+
+    & summary {
+      list-style: none;
+      font-size: 16px;
+      color: rgba(31, 37, 63, 1);
+      position: relative;
+      cursor: pointer;
+    }
+
+    & summary::after {
+      content: "+";
+      font-size: 26px;
+      position: absolute;
+      left: -23px;
+      bottom: -6px;
+    }
+
+    & details[open] > summary::after {
+      content: "-";
+    }
+
+    & p {
+      color: rgba(107, 114, 128, 1);
+    }
+  }
+}
+
+/* Second Aside Styling */
+#aside2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: rgba(31, 37, 63, 1);
+  width: 85%;
+  border-radius: 30px;
+  height: 300px;
+  margin: -250px auto 50px;
+
+  & h1 {
+    font-size: 40px;
+    width: 500px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    /* padding: 50px 0; */
+  }
+
+  & p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+  }
+
+  & button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: rgba(234, 230, 139, 1);
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    border-radius: 12px;
+    font-size: 15px;
+    color: rgba(31, 37, 63, 1);
+  }
+}
+
+/* Footer Styling */
+footer {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 100px;
+
+  & .footer-top {
+    display: flex;
+    align-items: center;
+    gap: 300px;
+    /* justify-content: space-around; */
+    margin: 0 180px;
+  }
+
+  & .footer-top1 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 300px;
+
+    & > img {
+      width: 120px;
+    }
+
+    & p {
+      color: rgba(107, 114, 128, 1);
+      font-size: 16px;
+      width: 250px;
+    }
+
+    & .footer-icons {
+      display: flex;
+      gap: 22px;
+    }
+  }
+  & .footer-top2 {
+    display: flex;
+    gap: 100px;
+
+    & .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      & h4 {
+        font-size: 18px;
+        color: rgba(31, 37, 63, 1);
+      }
+
+      & p {
+        font-size: 14px;
+        font-style: italic;
+        color: rgba(107, 114, 128, 1);
+      }
+    }
+  }
+
+  & .footer-bottom {
+    display: flex;
+    align-items: center;
+    margin: 0 180px;
+    justify-content: space-between;
   }
 }
