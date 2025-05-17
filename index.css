@@ -792,74 +792,151 @@ footer {
   }
 
   /* Main section responsivess for Mobile devices */
-  #main1{
+  #main1 {
     gap: 30px;
-    & .main-top{
-        gap: 15px;
-        & h1{
-            font-size: 27px;
-            width: 320px;
-        }
+    & .main-top {
+      gap: 15px;
+      & h1 {
+        font-size: 27px;
+        width: 320px;
+      }
     }
-    & .main-middle{
-        flex-direction: column;
-        gap: 20px;
+    & .main-middle {
+      flex-direction: column;
+      gap: 20px;
 
-        & .main-left, .main-right{
-            gap: 15px;
+      & .main-left,
+      .main-right {
+        gap: 15px;
+      }
+
+      & .main-one {
+        width: 370px;
+        gap: 15px;
+        padding: 15px 20px;
+
+        & .sub-main-one {
+          gap: 5px;
+
+          & h2 {
+            font-size: 20px;
+          }
+
+          & p {
+            font-size: 16px;
+            width: 250px;
+          }
         }
-
-        & .main-one{
-            width: 370px;
-            gap: 15px;
-            padding: 15px 20px;
-
-            & .sub-main-one{
-                gap: 5px;
-
-                & h2{
-                    font-size: 20px;
-                }
-
-                & p{
-                    font-size: 16px;
-                    width: 250px;
-                }
-            }
-        }
+      }
     }
   }
 
   /* Article Section Mobile Responsiveness */
-  #article1{
+  #article1 {
     /* width: 200px; */
     gap: 20px;
 
-    & .article-one{
-        flex-direction: column;
-        width: 350px;
-        gap: 20px;
+    & .article-one {
+      flex-direction: column;
+      width: 350px;
+      gap: 20px;
     }
 
-    & .mobile{
-        flex-direction: column-reverse;
+    & .mobile {
+      flex-direction: column-reverse;
     }
 
-    & .article-main{
-
-        & h2{
-            font-size: 25px;
-            width: 300px;
-        }
-        & p{
-            width: 340px;
-        }
+    & .article-main {
+      & h2 {
+        font-size: 25px;
+        width: 300px;
+      }
+      & p {
+        width: 340px;
+      }
     }
   }
 
   /* Second Article Mobile Responsiveness */
 
-  #article2{
-    
+  #article2 {
+    gap: 25px;
+
+    & .testimonial-heading {
+      gap: 5px;
+
+      & h1 {
+        font-size: 35px;
+        width: 350px;
+      }
+    }
+
+    & .testimonial-main {
+      flex-direction: column;
+    }
+  }
+
+  /* Aside(FAQ) mobile Responsiveness */
+  #aside1 {
+    flex-direction: column;
+    height: 900px;
+    gap: 30px;
+
+    & .aside-left {
+      width: 350px;
+      gap: 10px;
+
+      & h1 {
+        font-size: 25px;
+        width: 300px;
+      }
+      & p {
+        width: 320px;
+        font-size: 16px;
+      }
+    }
+
+    & .aside-faq {
+      width: 350px;
+
+      & details {
+        padding: 10px 30px;
+      }
+    }
+  }
+
+  /* Second Aside Mobile Responsiveness */
+  #aside2 {
+    gap: 20px;
+    height: 250px;
+    & h1 {
+      font-size: 27px;
+      width: 300px;
+    }
+
+    & p {
+      width: 250px;
+      text-align: center;
+    }
+  }
+
+  /* Footer Section Mobile Responsiveness */
+
+  footer{
+    gap: 20px;
+    align-items: center;
+
+    & .footer-top{
+        flex-direction: column;
+        gap: 30px;
+    }
+    & .footer-top2{
+        flex-direction: column;
+        gap: 20px;
+        width: 300px;
+    }
+    .footer-bottom{
+        gap: 40px;
+    }
   }
 }
