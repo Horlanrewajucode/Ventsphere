@@ -7,60 +7,71 @@
   </head>
   <body>
     <!-- Navigation Panel -->
-     
-    <nav>
-      <div class="nav-logo">
-        <img src="./assests/Images/Logo (2).svg" alt="logo" />
-      </div>
-      <a href="">
-        <img class="hamburger"
-          src="./assests/Images/list.svg"
-          alt="hamburger"
-        />
-    </a>
-      <div class="nav-links">
-        <div>
-          <ul>
-            <a href="">
-              <li>Service</li>
-            </a>
-            <a href="">
-              <li>About us</li>
-            </a>
-            <a href="">
-              <li>Benefits</li>
-            </a>
-            <a href="">
-              <li>FAQ?</li>
-            </a>
-          </ul>
+
+    <header>
+      <nav aria-label="Primary Navigation">
+        <div class="nav-logo">
+          <img
+            src="./assests/Images/Logo (2).svg"
+            alt="company logo"
+            aria-label="Homepage"
+          />
         </div>
-        <div class="nav-btn">
-          <button class="btn1">
-            Book a Strategy Call
-            <img
-              src="./assests/Images/stash_arrow-up-duotone.svg"
-              alt="image"
-            />
-          </button>
-          <button class="btn2">
-            Partner with Us
-            <img
-              src="./assests/Images/stash_arrow-up-duotone (2).svg"
-              alt="image"
-            />
-          </button>
+        <a href="" aria-label="Toggle navigation menu">
+          <img
+            class="hamburger"
+            src="./assests/Images/list.svg"
+            alt="hamburger"
+          />
+        </a>
+        <div class="nav-links">
+          <div>
+            <ul>
+              <li>
+                <a href="#" aria-label="Learn more about our services"
+                  >Service</a
+                >
+              </li>
+              <li>
+                <a href="#" aria-label="Learn more about us">About us</a>
+              </li>
+              <li>
+                <a href="#" aria-label="Explore benefits">Benefits</a>
+              </li>
+              <li>
+                <a href="#" aria-label="Frequently Asked Questions">FAQ?</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-btn">
+            <button class="btn1">
+              Book a Strategy Call
+              <img
+                src="./assests/Images/stash_arrow-up-duotone.svg"
+                alt="arrow image"
+                role="presentation"
+              />
+            </button>
+            <button class="btn2">
+              Partner with Us
+              <img
+                src="./assests/Images/stash_arrow-up-duotone (2).svg"
+                alt="arrow image"
+                role="presentation"
+              />
+            </button>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <!-- First Section -->
-    <section id="section1">
+    <section id="section1" aria-labelledby="hero-heading">
       <div class="hero-div">
         <div class="hero-container">
           <div class="hero-text">
             <div>
-              <h1>Providing Support for Startups</h1>
+              <h1 id="hero-heading">Providing Support for Startups</h1>
             </div>
             <div>
               <p>
@@ -69,66 +80,80 @@
               </p>
             </div>
             <div class="hero-button">
-              <button class="hero-btn1">
+              <button class="hero-btn1" aria-label="Partner with Us">
                 Partner with Us
                 <img
                   src="./assests/Images/stash_arrow-up-duotone (2).svg"
                   alt="button-image"
+                  role="presentation"
                 />
               </button>
-              <button class="hero-btn2">
+              <button class="hero-btn2" aria-label="Book a Strategy Call">
                 Book a Strategy Call
                 <img
                   src="./assests/Images/stash_arrow-up-duotone.svg"
                   alt="button-image"
+                  role="presentation"
                 />
               </button>
             </div>
           </div>
           <div class="image-container">
-            <img src="./assests/Images/Rectangle 1.svg" alt="image" />
+            <img
+              src="./assests/Images/Rectangle 1.svg"
+              alt="Illustration of startup concept"
+            />
           </div>
         </div>
-        <div class="hero-links">
+        <div class="hero-links" aria-label="Partner logos">
           <div class="hero-links1">
-              <p>Trusted Partnership with 100+ company’s</p>
-              <img src="./assests/Images/Zippo logo.svg" alt="logo" />
-              <img src="./assests/Images/grammarly logo.svg" alt="logo" />
+            <p>Trusted Partnership with 100+ company’s</p>
+            <img src="./assests/Images/Zippo logo.svg" alt="Zippo logo" />
+            <img
+              src="./assests/Images/grammarly logo.svg"
+              alt="Grammarly logo"
+            />
           </div>
           <div class="hero-links2">
-              <img
-                src="./assests/Images/GoodLeap_Orange_Logo logo.svg"
-                alt="logo"
-              />
-              <img src="./assests/Images/google logo.svg" alt="logo" />
-              <img src="./assests/Images/loom logo.svg" alt="logo" />
-                      </div>
+            <img
+              src="./assests/Images/GoodLeap_Orange_Logo logo.svg"
+              alt="GoodLeap logo"
+            />
+            <img src="./assests/Images/google logo.svg" alt="Google logo" />
+            <img src="./assests/Images/loom logo.svg" alt="Loom logo" />
           </div>
+        </div>
       </div>
     </section>
 
     <!-- Second Section Styling -->
-    <section id="section2">
+    <section id="section2" aria-labelledby="about-heading">
       <div class="section2-heading">
         <p>WHO WE ARE</p>
-        <h1>Your Dedicated Partner in Startup Success</h1>
+        <h1 id="about-heading">Your Dedicated Partner in Startup Success</h1>
       </div>
-      <div class="section2-main">
-        <div class="section2-main-left">
-          <img src="./assests/Images/Icon (1).svg" alt="icon" />
+      <div class="section2-main" aria-labelledby="mission-heading">
+        <article class="section2-main-left" aria-labelledby="mission-heading">
+          <figure>
+            <img
+              src="./assests/Images/Icon (1).svg"
+              alt="icon"
+              role="presentation"
+            />
+          </figure>
           <div class="section2-inner-div">
-            <h2>Our Mission</h2>
+            <h2 id="mission-heading">Our Mission</h2>
             <p>
               Our mission is to support startups by providing not only financial
               investment but also strategic guidance, mentorship, and access to
               a robust network of industry experts.
             </p>
           </div>
-        </div>
-        <div class="section2-main-right">
-          <img src="./assests/Images/Icon.svg" alt="icon" />
+        </article>
+        <article class="section2-main-right" aria-labelledby="vision-heading">
+          <img src="./assests/Images/Icon.svg" alt="icon" role="presentation" />
           <div class="section2-inner-div">
-            <h2>Our Vision</h2>
+            <h2 id="vision-heading">Our Vision</h2>
             <p>
               To be the leading venture capital agency that fuels innovation and
               empowers entrepreneurs, creating a thriving ecosystem where
@@ -136,76 +161,98 @@
               world.
             </p>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
     <!-- Main Section -->
 
-    <main id="main1">
-      <div class="main-top">
-        <h4>WHAT WE DO</h4>
+    <main id="main1" aria-labelledby="what-we-do-heading">
+      <header class="main-top">
+        <h4 id="what-we-do-heading">WHAT WE DO</h4>
         <h1>Financial Backing You Need to Succeed</h1>
         <p>
           We understand that financial support is foundational to startup
           growth, which is why we offer:
         </p>
-      </div>
-      <div class="main-middle">
+      </header>
+      <section class="main-middle" aria-label="Our Services">
         <div class="main-left">
-          <div class="main-one">
-            <img src="./assests/Images/seek funding.svg" alt="icon" />
+          <article class="main-one" aria-labelledby="seed-funding-heading">
+            <figure>
+              <img
+                src="./assests/Images/seek funding.svg"
+                alt="icon"
+                role="presentation"
+              />
+            </figure>
             <div class="sub-main-one">
-              <h2>Seed Funding</h2>
+              <h2 id="seed-funding-heading">Seed Funding</h2>
               <p>
                 We provide initial capital to early-stage startups, helping them
                 turn innovative ideas into viable businesses.
               </p>
             </div>
-          </div>
-          <div class="main-one">
-            <img src="./assests/Images/post investment.svg" alt="icon" />
+          </article>
+          <article class="main-one" aria-labelledby="post-investment-heading">
+            <figure>
+              <img
+                src="./assests/Images/post investment.svg"
+                alt="icon"
+                role="presentation"
+              />
+            </figure>
             <div class="sub-main-one">
-              <h2>Post-Investment Support</h2>
+              <h2 id="post-investment-heading">Post-Investment Support</h2>
               <p>
                 We provide flexible funding options designed to match the unique
                 needs of your startup, helping you grow at every stage."
               </p>
             </div>
-          </div>
+          </article>
         </div>
         <div class="main-right">
-          <div class="main-one">
-            <img src="./assests/Images/mentorship.svg" alt="icon" />
+          <article class="main-one" aria-labelledby="mentorship-heading">
+            <figure>
+              <img
+                src="./assests/Images/mentorship.svg"
+                alt="icon"
+                role="presentation"
+              />
+            </figure>
             <div class="sub-main-one">
-              <h2>Mentorship and Coaching</h2>
+              <h2 id="mentorship-heading">Mentorship and Coaching</h2>
               <p>
                 We provide flexible funding options designed to match the unique
                 needs of your startup, helping you grow at every stage."
               </p>
             </div>
-          </div>
-          <div class="main-one">
-            <img src="./assests/Images/strategic partnership.svg" alt="icon" />
+          </article>
+          <article class="main-one" aria-labelledby="partnership-heading">
+            <img
+              src="./assests/Images/strategic partnership.svg"
+              alt="icon"
+              role="presentation"
+            />
             <div class="sub-main-one">
-              <h2>Strategic Partnership</h2>
+              <h2 id="partnership-heading">Strategic Partnership</h2>
               <p>
                 Access our extensive network to forge partnerships that can open
                 doors and drive meaningful growth for your business.
               </p>
             </div>
-          </div>
+          </article>
         </div>
-      </div>
-      <button>
+      </section>
+      <button aria-label="Partner with Us">
         Partner with Us
         <img src="./assests/Images/stash_arrow-up-duotone (2).svg" alt="icon" />
       </button>
     </main>
 
     <!-- first Article Section -->
-    <article id="article1">
-      <div class="article-one">
+    <article id="article1" aria-labelledby="article-heading-1">
+      <section class="article-one" aria-labelledby="article-heading-1">
         <div class="article-main">
           <h2>Unlocking Potential for Ambitious Startups</h2>
           <p>
@@ -219,13 +266,20 @@
             <img
               src="./assests/Images/stash_arrow-up-duotone (2).svg"
               alt="icon"
+              role="presentation"
             />
           </button>
         </div>
-        <img src="./assests/Images/Image.svg" alt="image" />
-      </div>
-      <div class="article-one mobile">
-        <img src="./assests/Images/Image (1).svg" alt="image" />
+        <img
+          src="./assests/Images/Image.svg"
+          alt="Illustration representing startup potential"
+        />
+      </section>
+      <section class="article-one mobile" aria-labelledby="article-heading-">
+        <img
+          src="./assests/Images/Image (1).svg"
+          alt="Illustration of professional mentorship"
+        />
         <div class="article-main">
           <h2>Partner with seasoned professionals</h2>
           <p>
@@ -239,19 +293,20 @@
             <img
               src="./assests/Images/stash_arrow-up-duotone (2).svg"
               alt="icon"
+              role="presentation"
             />
           </button>
         </div>
-      </div>
+      </section>
     </article>
 
     <!-- Second Article section -->
-    <article id="article2">
-      <div class="testimonial-heading">
+    <article id="article2" aria-labelledby="testimonials-heading">
+      <header class="testimonial-heading">
         <h3>TESTIMONIALS</h3>
         <h1>Success Stories from Visionary Founders</h1>
-      </div>
-      <div class="testimonial-main">
+      </header>
+      <section class="testimonial-main" aria-label="Founder Testimonials">
         <div class="testimonial-main1">
           <h3>WORD FROM FOUNDER</h3>
           <p>
@@ -276,12 +331,12 @@
           <h3>Henry Orton</h3>
           <h4>CEO of Jobber</h4>
         </div>
-      </div>
+      </section>
     </article>
 
     <!-- Aside Section(FAQ Section) -->
-    <aside id="aside1">
-      <div class="aside-left">
+    <aside id="aside1" aria-labelledby="Frequently-asked-questions">
+      <section class="aside-left" aria-labelledby="we-have-answers">
         <h4>WE HAVE ANSWERS</h4>
         <h1>Frequently Asked Questions</h1>
         <p>
@@ -289,8 +344,8 @@
           startups like yours. For more inquiries, reach us at
           <span>contact@ventsphere.com.</span>
         </p>
-      </div>
-      <div class="aside-faq">
+      </section>
+      <section class="aside-faq" aria-labelledby="FAQ-section">
         <details>
           <summary>What types of startups do you work with?</summary>
           <p>
@@ -319,21 +374,25 @@
             Reiciendis, impedit. Lorem ipsum dolor sit amet.
           </p>
         </details>
-      </div>
+      </section>
     </aside>
 
     <!-- Second Aside Section -->
-    <aside id="aside2">
-      <h1>Let’s Partner for Your Startup Success!</h1>
+    <aside id="aside2" aria-labelledby="partnership-heading">
+      <h1 id="partnership-heading">Let’s Partner for Your Startup Success!</h1>
       <p>Join us in transforming your startup vision into reality!</p>
-      <button>
+      <button aria-label="Partner with us">
         Partner with Us
-        <img src="./assests/Images/stash_arrow-up-duotone.svg" alt="icon" />
+        <img
+          src="./assests/Images/stash_arrow-up-duotone.svg"
+          alt="icon"
+          aria-hidden="true"
+        />
       </button>
     </aside>
 
     <!-- Footer Section -->
-    <footer>
+    <footer aria-labelledby="footer-heading">
       <div class="footer-top">
         <div class="footer-top1">
           <img src="./assests/Images/Logo (2).svg" alt="logo" />
@@ -342,34 +401,35 @@
             and support.
           </p>
           <div class="footer-icons">
-            <a href=""
+            <a href="" aria-label="Ventsphere on LinkedIn"
               ><img src="./assests/Images/linkedin.svg" alt="icon"
             /></a>
-            <a href=""><img src="./assests/Images/vector.svg" alt="icon" /></a>
-            <a href=""
+            <a href="" aria-label="Ventsphere on twitter"
+            ><img src="./assests/Images/vector.svg" alt="icon" /></a>
+            <a href="" aria-label="Ventsphere on facebook"
               ><img src="./assests/Images/facebook.svg" alt="icon"
             /></a>
-            <a href=""
+            <a href="" aria-label="Ventsphere on instagram"
               ><img src="./assests/Images/instagram.svg" alt="icon"
             /></a>
           </div>
         </div>
         <div class="footer-top2">
-          <div class="footer-links">
+          <div class="footer-links" aria-label="Quick-links">
             <h4>Quick Links</h4>
             <p>Our Service</p>
             <p>Benefits Offered</p>
             <p>Mission & Vision</p>
             <p>FAQ</p>
           </div>
-          <div class="footer-links">
+          <div class="footer-links" aria-label="partnership">
             <h4>Partnership</h4>
             <p>Seed Funding</p>
             <p>Investor Partner</p>
             <p>Mentorship</p>
             <p>Partnership</p>
           </div>
-          <div class="footer-links">
+          <div class="footer-links" aria-label="contact-us">
             <h4>Contact Us</h4>
             <p>+1 (123) 456-7890</p>
             <p>COntact@ventsphere.com</p>
