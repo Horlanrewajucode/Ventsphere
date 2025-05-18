@@ -665,8 +665,118 @@ footer {
 
 /* Tablets Devices Responsive Styling */
 
-@media screen and (min-width: 700px) and (max-width:850px) {
+@media screen and (min-width: 700px) and (max-width: 850px) {
+  nav {
+    padding: 0 15px;
+    background-color: white;
+    justify-content: center;
+    position: sticky;
+    gap: 20px;
+    top: 0;
+    height: 60px;
+    z-index: 999;
 
+    & .nav-logo{
+      /* width: 30px; */
+
+      & img{
+        width: 120px;
+      }
+    }
+
+    & .nav-links {
+      gap: 5px;
+      /* display: none; */
+
+      & ul{
+        gap: 10px;
+      }
+    }
+  }
+
+  #section1{
+    height: 1100px;
+    & .hero-text{
+      align-items: center;
+      justify-content: center;
+      & h1{
+        font-size: 65px;
+        text-align: center;
+      }
+      & p{
+        text-align: center;
+        font-size: 25px;
+        width: 600px;
+      }
+    }
+    & .hero-button{
+      align-items: center;
+      justify-content: center;
+    }
+    & .hero-container{
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    & .hero-links{
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  #section2{
+    & .section2-main{
+      flex-direction: column;
+
+      & .section2-main-left, .section2-main-right{
+        width: 650px;
+        gap: 30px;
+        padding: 50px 70px;
+
+        & .section2-inner-div{
+
+          & h2{
+            font-size: 40px;
+          }
+          & p{
+            font-size: 25px;
+            width: 500px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1200px){
+  nav{
+    & .nav-links{
+      gap: 10px;
+    }
+  }
+  #section1{
+
+    & .hero-links{
+      gap: 50px;
+
+      & .hero-links1, .hero-links2{
+        gap: 60px;
+      }
+    }
+  }
+
+  footer{
+    gap: 50px;
+    & .footer-top{
+      gap: 100px;
+      margin: 0 80px;
+    }
+    & .footer-top2{
+      gap: 130px;
+    }
+  }
 }
 
 /* Mobile Devices Responsive Styling */
@@ -698,7 +808,7 @@ footer {
     }
   }
 
-  /* Section1 responsivess for Mobile devices */
+  /* Section1 responsiveness for Mobile devices */
 
   #section1 {
     height: 900px;
@@ -758,7 +868,7 @@ footer {
     }
   }
 
-  /* Section2 responsivess for Mobile devices */
+  /* Section2 responsiveness for Mobile devices */
 
   #section2 {
     /* width: 100px; */
@@ -806,7 +916,7 @@ footer {
     }
   }
 
-  /* Main section responsivess for Mobile devices */
+  /* Main section responsiveness for Mobile devices */
   #main1 {
     gap: 30px;
     & .main-top {
